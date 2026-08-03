@@ -1,0 +1,197 @@
+<!doctype html>
+
+<html lang=" en-US">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/rs-station.github.io-preview/pr-previews/pr-87/assets/data/rs-favicon_32x32.png" />
+    <!-- Google Fonts: Inter (site) + IBM Plex Sans (content pages) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap); ?v busts browser cache on each build -->
+    <link rel="stylesheet" href="/rs-station.github.io-preview/pr-previews/pr-87/assets/css/styles.css?v=1785736109">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title> Merging Small Molecule MicroED Data | RS Station </title>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
+    <div class="container px-5">
+        <a class="navbar-brand d-flex align-items-center" href="/rs-station.github.io-preview/pr-previews/pr-87/index.html">
+            <img style="height: 36px;" src="/rs-station.github.io-preview/pr-previews/pr-87/assets/data/RSS_Worm_no_background.png" alt="Reciprocal Space Station logo" class="me-2" />
+            Reciprocal Space Station
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                
+                <li class="nav-item">
+                    <a class="nav-link "
+                        href="/rs-station.github.io-preview/pr-previews/pr-87/">
+                        Home
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link "
+                        href="/rs-station.github.io-preview/pr-previews/pr-87/about.html">
+                        About
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link "
+                        href="/rs-station.github.io-preview/pr-previews/pr-87/team.html">
+                        Team
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link "
+                        href="/rs-station.github.io-preview/pr-previews/pr-87/software.html">
+                        Software
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link "
+                        href="/rs-station.github.io-preview/pr-previews/pr-87/contact.html">
+                        Contact
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link "
+                        href="/rs-station.github.io-preview/pr-previews/pr-87/publications.html">
+                        Publications
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link "
+                        href="/rs-station.github.io-preview/pr-previews/pr-87/blog.html">
+                        Blog
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://discourse.rs-station.org">
+                        Forum
+                    </a>
+                </li>
+
+                <li class="nav-item nav-social">
+                    <a class="nav-link" href="https://github.com/orgs/rs-station/repositories" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="nav-link" href="https://bsky.app/profile/rs-station.bsky.social" aria-label="Bluesky">
+                        <i class="fa-brands fa-bluesky"></i>
+                    </a>
+                    <a class="nav-link" href="https://x.com/open_rss" aria-label="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a class="nav-link" href="https://www.linkedin.com/company/reciprocal-space-station" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a class="nav-link" href="https://www.youtube.com/@reciprocal-space-station" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+    <div class="page-cover-banner" style="background-image: url('/rs-station.github.io-preview/pr-previews/pr-87/assets/data/reciprocal_space_station_cover.jpg')" aria-hidden="true"></div>
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 mt-4 mb-5">
+
+  <!-- Scrollspy TOC sidebar (large screens only) -->
+  <div class="col-lg-3 d-none d-lg-block" id="toc-col">
+    <div class="toc-sidebar sticky-top" style="top: 1.5rem;">
+      <nav id="page-toc" class="toc-nav" aria-label="On this page"></nav>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="col-12 col-md-10 offset-md-1 col-lg-9 offset-lg-0" id="content-body">
+    <p><a href="/rs-station.github.io-preview/pr-previews/pr-87/blog.html">⬅️ Back to blog posts</a></p>
+
+<p>22 Aug 2024</p>
+<h1>Merging Small Molecule MicroED Data</h1>
+<h3>Preprint Demonstrates using Careless in Small Molecule MicroED</h3>
+<p class="post-byline">Doris Mai</p>
+
+<h3 id="small-molecule-microed">Small Molecule MicroED</h3>
+<!-- For decades, single-crystal X-ray diffraction (SCXRD) has been the gold standard for structure elucidation for small molecules.  -->
+<p>Microcrystal electron diffraction (MicroED), also known as continuous rotational electron diffraction (cRED), or 3-dimensional electron diffraction (3DED), is an emerging technique for elucidating small molecule structures from micro- and nano-crystals. 
+However, data processing in microED can be challenging and often requires <strong>merging datasets from multiple crystals</strong> due to limited rotation ranges in many transmission electron microscopes (TEMs) and higher noise in intensity measurements than conventional X-ray diffraction (XRD) experiments. 
+A common practice in the field is to manually curate datasets and apply scaling programs such as <a href="https://doi.org/10.1107/S0907444909047337">XDS/XSCALE</a> from rotational XRD, but this can be time-consuming and risks introducing human bias. In this <a href="https://doi.org/10.26434/chemrxiv-2024-62bmk">preprint</a>, we demonstrate that <a href="https://github.com/rs-station/careless">Careless</a> can be used for merging small molecule microED data and investigate the impact of dataset curation.</p>
+
+<h3 id="dataset-curation-in-merging">Dataset Curation in Merging</h3>
+<p>We benchmark Careless with XDS/XSCALE on more than 10 cases of multi-crystal merging and compare the performance between using all datasets and manually curated datasets (curated=True). 
+We also explore an extension to Careless (<a href="https://github.com/DorisMai/careless/tree/multi_xtal_sig">MC-Careless</a>) to automate the curation of datasets. Specifically, an optimal weighting among datasets (\(w\)) is learned jointly with the scaling factors (\(K\)) and structure factor amplitudes (\(F\)). 
+This weight modulates the effective uncertainty of the intensities (\(\sigma_I\)) from different crystals to account for the variability of data quality across datasets.</p>
+
+<p class="blog-caption-wide"><img src="/assets/posts/2024-08-22-small-molecule-microed/mc-careless-schematic.png" alt="Schematic of weighting" class="blog-image-wide" /> 
+Schematic from the <a href="https://doi.org/10.26434/chemrxiv-2024-62bmk">preprint</a> of the multi-crystal weighting extension to Careless. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">(CC-BY-NC-ND license)</a></p>
+
+<p>In the presented cases, Careless benefits from using all available data, and our multi-crystal weighting extension did not further improve the performance. Manual curation of datasets affects the \(CC_{1/2}\) in XDS/XSCALE and Careless but has marginal impact on the accuracy with respect to structure factor amplitudes calculated from reference structures and on <em>ab initio</em> phasing outcomes.</p>
+
+<p class="blog-caption-wide"><img src="/assets/posts/2024-08-22-small-molecule-microed/preliminary-maps.png" alt="Initial map" class="blog-image-wide" /> 
+Examples from the <a href="https://doi.org/10.26434/chemrxiv-2024-62bmk">preprint</a> of <em>ab initio</em> phasing outcomes from different merging protocols. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">(CC-BY-NC-ND license)</a></p>
+
+<h3 id="key-points-and-future-directions">Key points and Future Directions</h3>
+<ul>
+  <li>Careless can merge microED and small molecule crystallography data.</li>
+  <li>The variational inference framework implemented in Careless is flexible for methods development as demonstrated in our <a href="https://github.com/DorisMai/careless/tree/multi_xtal_sig">MC-Careless</a>.</li>
+  <li>Additional exploration of the hyperparameter space and the Wilson prior might be helpful for challenging cases with pathologies.</li>
+  <li>The common practice of manual dataset curation should be cautioned and deserves future investigation.</li>
+</ul>
+
+
+<p><a href="/rs-station.github.io-preview/pr-previews/pr-87/blog.html">⬅️ Back to blog posts</a></p>
+
+  </div>
+
+</div>
+
+    </div>
+    
+
+    <footer class="py-5 bg-dark">
+    <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">&copy;  <script>document.write( new Date().getUTCFullYear() );</script> 1/astronauts </p></div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="/rs-station.github.io-preview/pr-previews/pr-87/assets/js/scripts.js?v=1785736109"></script>
+
+    <!-- Use MathJax, only when requested in the frontmatter -->
+    
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    
+  </body>
+</html>
+
+
